@@ -1,0 +1,17 @@
+form {
+    font-family: 'Tajawal', sans-serif;
+}
+
+#datosAgregados {
+    border: 1px solid gray; /* Añade un borde gris alrededor del div */
+    padding: 20px; /* Añade espacio alrededor del texto */
+    margin-top: 20px; /* Añade en la parte superior del div */
+    text-align: center; /* Centra el texto */
+  }
+
+p{
+    font-weight: bold; /* resalta el texto del titulo 'Datos agregados' */
+}
+  
+
+  

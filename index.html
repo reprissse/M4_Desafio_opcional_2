@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN de bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet"> 
+    <!-- mi estilo -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- titulo de pestaña -->
+    <title>Desafio</title>
+</head>
+
+
+<body>
+    <div class="container m-3 p">
+        <div class="mx-auto text-center">
+          <!-- imagen de cabecera -->
+            <img src="./assets/img/conejo-perro-gato.jpg" alt="animales" class="img-fluid">
+            <!-- titulo bajo cabecera -->
+            <h2 class="my-3">Consulta Veterinaria</h2>
+        </div>
+
+        <!-- inicio del formulario -->
+        <form id="miFormulario">
+
+            <!-- imput: dueño -->
+            <div class="form-group">
+              <label for="propietario">Dueño: </label>
+              <input type="text" class="form-control" id="propietario" aria-describedby="textoAyuda">
+              <small id="textoAyuda" class="form-text text-muted">Nunca compartiremos tus datos.</small>
+
+            <!-- input: numero de telefono -->
+            </div>
+            <div class="form-group">
+              <label for="telefono">Numero Telefonico: </label>
+              <input type="text" class="form-control" id="telefono">
+            </div>
+
+
+            <!-- input: lugar de residencia -->
+            <div class="form-group">
+              <label for="direccion">Lugar de Residencia: </label>
+              <input type="text" class="form-control" id="direccion">
+            </div>
+
+            <!-- input: nombre de la mascota -->
+            <div class="form-group">
+              <label for="nombreMascota">Nombre de la Mascota: </label>
+              <input type="text" class="form-control" id="nombreMascota">
+            </div>
+
+            <!-- dropdown: selección de mascota -->
+            <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <select class="form-control" id="tipo">
+                  <option value="perro">Perro</option>
+                  <option value="gato">Gato</option>
+                  <option value="conejo">Conejo</option>
+                </select>
+            </div>
+
+            <!-- input: motivo de consulta -->
+            <div class="form-group">
+              <label for="enfermedad">Motivo de la consulta: </label>
+              <input type="text" class="form-control" id="enfermedad">
+            </div>
+
+            <!-- boton de agregar -->
+            <button type="submit" class="btn btn-primary">Agregar</button>
+
+            <!-- fin de formulario -->
+          </form>
+
+
+
+          <!-- se visualizan resumen de los datos ingresados despues de 'agregar'  -->
+          <div class="text-center mt-5" id="datosAgregados" style="display: none;">
+              <p>Datos Agregados</p>
+              <!-- resultado -->
+              <div id="resultado">
+                  <ul>
+                  </ul>
+              </div>
+          </div>
+
+    </div>
+
+
+    <!-- Mi script -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
